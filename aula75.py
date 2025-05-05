@@ -1,3 +1,12 @@
+# def duplicar(numero):
+#     return numero * 2
+
+# def triplicar(numero):
+#     return numero * 3
+
+# def quadruplicar(numero):
+#     return numero * 4
+
 def criar_multiplicador(multiplicador):
     def multiplicar(numero):
         return numero * multiplicador
