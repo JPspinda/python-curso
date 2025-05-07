@@ -16,7 +16,7 @@ def exibir(lista):
 
 # lista.sort(key=lambda item: item['sobrenome']) #passando a função no sort(hey=) e retornando o item na função, .sort() muda a lista inteira
 l1 = sorted(lista, key=lambda item: item['sobrenome'])#sorted copia a lista ordenada
-l2 = sorted(lista, key=lambda item: item['nome'])
+l2 = sorted(lista, key=lambda item: item['nome']) #lambda é uma função sem nome
 
 exibir(l1)
 exibir(l2)
