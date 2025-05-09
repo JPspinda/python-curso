@@ -1,6 +1,6 @@
 def encontra_primeiro_duplicado(lista_de_inteiros):
     numeros_checados = set()
-    primeiro_duplicado = -1
+    primeiro_duplicado = 0
     
     for numero in lista_de_inteiros:
         if numero in numeros_checados:
