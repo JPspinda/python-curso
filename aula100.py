@@ -12,6 +12,13 @@
 # print(modulo.soma_do_modulo(2, 2))
 # print(variavel)
 # print(nova_variavel)
-from aula100_package.modulo import soma_do_modulo
-print(__name__)
-print(soma_do_modulo(2,2))
+# from aula100_package.modulo import soma_do_modulo
+# from aula100_package.modulo_b import *args
+# print(__name__)
+# print(soma_do_modulo(2,2))
+
+#o arquivo __init__ é importado com o package, ele faz o package ser importado
+from aula100_package import soma_do_modulo, fala_oi
+
+print(soma_do_modulo(2, 3))
+fala_oi()
