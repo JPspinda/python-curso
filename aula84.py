@@ -23,7 +23,7 @@ dados_pessoa = {
 pessoa_completa = {**pessoa, **dados_pessoa}
 
 # print(pessoa_completa)
-def mostro_argumentos_nomeados(*args, **kwargs): #sempre que for algumentos nomeados é o **kwargs que empacota argumentos nomeados
+def mostro_argumentos_nomeados(*args, **kwargs): #sempre que for argumentos nomeados é o **kwargs que empacota argumentos nomeados
     print('NÃO NOMEADOS', args)
     
     for chave, valor in kwargs.items():
