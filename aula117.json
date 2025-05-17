@@ -1,0 +1,23 @@
+{
+  "nome": "João Pedro",
+  "sobrenome": "Spinda",
+  "endereços": [
+    {
+      "rua": "R1",
+      "numero": 32
+    },
+    {
+      "rua": "R2",
+      "numero": 55
+    }
+  ],
+  "altura": 1.8,
+  "numeros_preferidos": [
+    5,
+    3,
+    7,
+    12
+  ],
+  "dev": true,
+  "nada": null
+}
