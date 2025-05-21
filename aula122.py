@@ -1,14 +1,18 @@
 class Carro:
-    def __init__(self, nome='Sei lá'): # o método init sempre retorna None
-        self.nome = nome
+    def __init__(abc, nome='Sei lá'): # o método init sempre retorna None, poderia também alterar o nome do self que iria funcionar por ser o primeiro parâmetro
+        abc.nome = nome
     
-    def acelerar(self):
-        print(f'{self.nome} está acelerando...')
+    def acelerar(efg):
+        print(f'{efg.nome} está acelerando...')
         
 fusca = Carro('Fusca')
-# print(fusca.nome)
 fusca.acelerar()
+Carro.acelerar(fusca)
+# print(fusca.nome)
+# fusca.acelerar()
 
 celta = Carro(nome='Celta')
-# print(celta.nome)
 celta.acelerar()
+Carro.acelerar(celta)
+# print(celta.nome)
+# celta.acelerar()
