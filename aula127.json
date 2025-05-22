@@ -1,7 +1,16 @@
-{
-  "nome": "Maria",
-  "idade": 20,
-  "comida_fav": "Omelete",
-  "gosto": "Ler",
-  "hobbie": "Tricô"
-}
+[
+  {
+    "nome": "João",
+    "idade": 18,
+    "comida_fav": "Strogonoff",
+    "gosto": "Jogar Bola",
+    "hobbie": "Guitarra"
+  },
+  {
+    "nome": "Maria",
+    "idade": 20,
+    "comida_fav": "Omelete",
+    "gosto": "Ler",
+    "hobbie": "Tricô"
+  }
+]

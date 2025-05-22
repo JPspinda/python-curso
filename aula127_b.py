@@ -11,7 +11,7 @@ def ler(caminho_arquivo):
             dados = json.load(arquivo)
     except FileNotFoundError:
         print('Arquivo não existe.')
-    print_dict(dados)
+    print(dados)
 
 dict = {'nome': 'João', 'idade': 18, 'comida_fav': 'Strogonoff', 'gosto': 'Jogar Bola', 'hobbie': 'Guitarra'}
 

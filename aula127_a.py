@@ -1,29 +1,21 @@
 import json
 
-def salvar(classe, caminho_arquivo):
-    dado = classe
-    with open(caminho_arquivo, 'w', encoding='utf8') as arquivo:
-        dado = json.dump(dado, arquivo, indent=2, ensure_ascii=False)
-    return dado
-
-caminho = 'aula127.json'
+CAMINHO_ARQUIVO = 'aula127(curso).json'
 
 class Pessoa:
-    ano_atual = 2025
-    
-    def __init__(self, nome, idade, comida_fav, gosto, hobbie):
+    def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
-        self.comida_fav = comida_fav
-        self.gosto = gosto
-        self.hobbie = hobbie
-        # self.ano_atual = 100
         
-    def get_ano_nascimento(self):
-        return Pessoa.ano_atual - self.idade
-    
+p1 = Pessoa('João', 33)
+p2 = Pessoa('Helena', 21)
+p3 = Pessoa('Joana', 11)
+bd = [vars(p1), p2.__dict__, vars(p3)]
 
-p1 = Pessoa('João', 18, 'Strogonoff', 'Jogar Bola', 'Guitarra')
-p2 = Pessoa('Maria', 20, 'Omelete', 'Ler', 'Tricô')
-salvar(vars(p1), caminho)
-salvar(vars(p2), caminho)
+def fazer_dump():
+    print('FAZENDO DUMP')
+    with open(CAMINHO_ARQUIVO, 'w', encoding='utf8') as arquivo:
+        dado = json.dump(bd, arquivo, indent=2, ensure_ascii=False)
+    
+if __name__ == '__main__':
+    fazer_dump()
