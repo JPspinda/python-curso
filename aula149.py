@@ -1,0 +1,9 @@
+# with open('aula149.txt', 'w') as arquivo:
+#     ...
+
+class MyContextManager:
+    def __enter__(self):
+        ...
+        
+    def __exit__(self, class_exception, exception, traceback):
+        ... 
